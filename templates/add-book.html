@@ -1,0 +1,49 @@
+{% include 'base.html' %}
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Add a new book
+        </div>
+        <div class="card-body">
+            <form id="bookForm">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label>Author</label>
+                    <input type="text" class="form-control" name="author" required>
+                </div>
+                <div class="form-group">
+                    <label>Genre</label>
+                    <input type="text" class="form-control" name="genre" required>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" rows="3" name="complete" required></input>
+                    <label>Complete?</label>
+                </div>
+                <div class="form-group">
+                    <label>Completed date</label>
+                    <input type="date" class="form-control" rows="3" name="completed_date" required></input>
+                </div>
+                <div class="form-group">
+                    <label>Published date</label>
+                    <input type="date" class="form-control" rows="3" name="published_date" required></input>
+                </div>
+                <div class="form-group">
+                    <label>Rating</label>
+                    <select class="form-control" name="rating">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-pink"> Add new Book</button>
+                <a href="/books/my_books" class="btn-purple fake-btn">Back</a>
+            </form>
+        </div>
+    </div>
+</div>

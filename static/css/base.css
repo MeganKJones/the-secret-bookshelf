@@ -1,0 +1,81 @@
+
+body {
+  background: #fafafa;
+  color: #33333a;
+  padding-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #323232;
+}
+
+.main-color {
+  background-color: #e27396 ;
+  color: white;
+}
+
+.btn-pink {
+  background-color: #e27396 ;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid transparent;
+}
+
+.btn-pink:hover {
+  background-color: #ea9ab2;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-purple {
+  background-color: #c8b6ff ;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid transparent;
+}
+
+.btn-purple:hover {
+  background-color: #e7c6ff;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-blue {
+  background-color: #a2d2ff ;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid transparent;
+}
+
+.btn-blue:hover {
+  background-color: #a9def9;
+  color: white;
+  text-decoration: none;
+}
+
+.fake-btn {
+  padding: 0.563rem 1rem;
+}
+
+/* h1 {
+  color: red;
+} */
+
+
+
+

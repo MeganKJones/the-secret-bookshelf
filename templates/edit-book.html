@@ -1,0 +1,58 @@
+{% include 'base.html' %}
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Let's edit your book!
+        </div>
+        <div class="card-body">
+            <form id="editBookForm">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" name="title" value="{{book.title}}" required>
+                </div>
+                <div class="form-group">
+                    <label>Author</label>
+                    <input type="text" class="form-control" name="author" value="{{book.author}}" required>
+                </div>
+                <div class="form-group">
+                    <label>Genre</label>
+                    <input type="text" class="form-control" name="genre" value="{{book.genre}}" required>
+                </div>
+                <div class="form-group">
+                    <label>Finished date</label>
+                    <input type="date" name="completed_date" value="{{book.completed_date}}" class="form-control"
+                           required>{{book.completed_date}}</input>
+                </div>
+                <div class="form-group">
+                    <label>Published date</label>
+                    <input type="date" name="published_date" value="{{book.published_date}}" class="form-control"
+                           required>{{book.published_date}}</input>
+                </div>
+                <div class="form-group">
+                    <label>Rating</label>
+                    <select name="rating" class="form-control">
+                        <option {% if book.rating== 1 %} selected="selected" {% endif %}>1</option>
+                        <option {% if book.rating== 2 %} selected="selected" {% endif %}>2</option>
+                        <option {% if book.rating== 3 %} selected="selected" {% endif %}>3</option>
+                        <option {% if book.rating== 4 %} selected="selected" {% endif %}>4</option>
+                        <option {% if book.rating== 5 %} selected="selected" {% endif %}>5</option>
+                    </select>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="complete" {% if book.complete %} checked {%
+                           endif %}>
+                    <label class="form-check-label">Complete</label>
+                </div>
+                <button type="submit" class="btn-pink">Edit your book</button>
+                <button id="deleteButton" type="button" class="btn-blue">Delete</button>
+                <a href="/books/my_books" class="btn-purple fake-btn">Back</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
