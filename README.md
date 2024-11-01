@@ -1,6 +1,9 @@
 # The Secret Library 📚
 
-The Secret Library is a book tracking application built with **FastAPI** and **Python**. Users can log in, track, and manage books they've read, along with metadata like reading completion dates, ratings, and authors. This project demonstrates a complete REST API implementation using FastAPI, including authentication, CRUD operations, and a database connection.
+The Secret Library is a book tracking application built with **FastAPI** and **Python 3.12**. Users can log in, track, 
+and manage books they've read, along with metadata like reading completion dates, ratings, and authors. This project 
+demonstrates a complete REST API implementation using FastAPI, including authentication, CRUD operations, and a 
+database connection.
 
 ## Features
 
